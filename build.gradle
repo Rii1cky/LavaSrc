@@ -47,6 +47,10 @@ subprojects {
     apply plugin: "java"
     apply plugin: "maven-publish"
 
+	dependencies {
+    	implementation "com.github.topi314.lavasrc:lavasrc-plugin-37c14c3:4.3.0"
+	}
+
     def (versionStr, isSnapshot) = getGitVersion()
     version versionStr
     println "Version: " + versionStr
